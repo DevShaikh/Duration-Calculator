@@ -2,6 +2,8 @@
 // @Author       Ahmed Shaikh ( DevShaikh )
 
 // @ArgumentsDatesFormat   YYYY-MM-DD
+
+// Function
 const calculator = (manufactureDate, expiryDate) => {
   // Dates
   const currDate = new Date()
