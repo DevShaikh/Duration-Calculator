@@ -9,13 +9,13 @@ const calculator = (manufactureDate, expiryDate) => {
   const mfDate = new Date(manufactureDate)
   const expDate = new Date(expiryDate)
 
-  // Getting total days between manufacture date to current date
+  // Getting total days between manufacture date to expiry date
   const totalDays = (expDate - mfDate) / (1000 * 3600 * 24)
 
-  // Getting total passed days between manufacture date to expiry date
+  // Getting total passed days between manufacture date to current date
   const daysPassed = (currDate - mfDate) / (1000 * 3600 * 24)
 
-  // Getting total passed days between manufacture date to expiry date
+  // Getting total remaining days between current date to expiry date
   const daysRemaining = (expDate - currDate) / (1000 * 3600 * 24)
 
   // Calculating passed days percentage
